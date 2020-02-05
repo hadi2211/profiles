@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(238, 233, 226);
+        }
+        
+        body img {
+            max-width: 20%;
+            height: auto;
+            float: left;
+        }
+        
+        body header {
+            margin-left: 100px;
+            margin-top: 25px;
+        }
+        
+        #div {
+            margin-left: 100px;
+            margin-top: 20px;
+            margin-right: 100px;
+        }
+        
+        #div p {
+            line-height: 27px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 id="name">Hadi Bux Mahessar</h2>
+
+    </header>
+    <div id="div">
+        <img id="profile" src="hadi.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel consequat mi. Cras condimentum, eros eu semper varius, mi felis tempor magna, vitae rutrum enim purus a odio. Curabitur nec tortor nec purus hendrerit scelerisque at at quam. Sed lacus
+            lectus, gravida ac fringilla ac, ullamcorper a nulla. Sed a libero diam. Donec velit velit, lobortis et posuere sit amet, tincidunt ac lacus. Duis facilisis nulla non ante eleifend lobortis. Donec pulvinar elementum volutpat. Duis lacinia,
+            nunc sit amet ultrices consequat, risus nisi laoreet ligula, ut eleifend diam justo a orci. Quisque scelerisque, erat sed aliquam malesuada, ligula arcu laoreet risus, eu dignissim arcu ligula non nibh. Vivamus ut est quis elit ornare ultricies
+            nec at odio. Donec sodales ac ligula et cursus.
+
+        </p>
+        <button style="background-color: black;color: white;" onclick="hadi()" type="button">Hadi Bux</button>
+        <button onclick="babar()" type="button">Babar</button>
+        <button onclick="nouman()" type="button">Nouman</button>
+        <button onclick="furqan()" type="button">Furqan</button>
+
+    </div>
+    <div>
+    </div>
+    <script>
+        function babar() {
+            document.getElementsByTagName("button")[1].style.backgroundColor = "black";
+            document.getElementsByTagName("button")[1].style.color = "white";
+            document.getElementsByTagName("button")[0].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[0].style.color = "black";
+            document.getElementsByTagName("button")[2].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[2].style.color = "black";
+            document.getElementsByTagName("button")[3].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[3].style.color = "black";
+            document.getElementsByTagName("img")[0].src = "babar.jpeg"
+            document.getElementById("name").innerHTML = "Babar Ali Buriro"
+            document.getElementsByTagName("p")[0].innerHTML = "Mauris dapibus congue ligula. Proin luctus hendrerit metus vel blandit. Nam vehicula sapien nibh, at viverra mauris elementum sed. Suspendisse vehicula nunc at eros blandit, eget mollis arcu scelerisque. Integer elementum turpis sit amet arcu sodales, at convallis purus gravida. Ut egestas ut arcu eget vestibulum. Nam congue vitae sem eget ullamcorper. In rhoncus molestie nulla."
+        }
+
+        function hadi() {
+            document.getElementsByTagName("button")[0].style.backgroundColor = "black";
+            document.getElementsByTagName("button")[0].style.color = "white";
+            document.getElementsByTagName("button")[1].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[1].style.color = "black";
+            document.getElementsByTagName("button")[2].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[2].style.color = "black";
+            document.getElementsByTagName("button")[3].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[3].style.color = "black";
+            document.getElementsByTagName("img")[0].src = "hadi.jpg"
+            document.getElementById("name").innerHTML = "Hadi Bux"
+            document.getElementsByTagName("p")[0].innerHTML = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel consequat mi. Cras condimentum, eros eu semper varius, mi felis tempor magna, vitae rutrum enim purus a odio. Curabitur nec tortor nec purus hendrerit scelerisque at at quam. Sed lacuslectus, gravida ac fringilla ac, ullamcorper a nulla.Sed a libero diam.Donec velit velit, lobortis et posuere sit amet, tincidunt ac lacus.Duis facilisis nulla non ante eleifend lobortis.Donec pulvinar elementum volutpat.Duis lacinia, nunc sit amet ultrices consequat, risus nisi laoreet ligula, ut eleifend diam justo a orci.Quisque scelerisque, erat sed aliquam malesuada, ligula arcu laoreet risus, eu dignissim arcu ligula non nibh.Vivamus ut est quis elit ornare ultriciesnec at odio.Donec sodales ac ligula et cursus."
+        }
+
+        function nouman() {
+            document.getElementsByTagName("button")[2].style.backgroundColor = "black";
+            document.getElementsByTagName("button")[2].style.color = "white";
+            document.getElementsByTagName("button")[3].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[3].style.color = "black";
+            document.getElementsByTagName("button")[0].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[0].style.color = "black";
+            document.getElementsByTagName("button")[1].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[1].style.color = "black";
+
+            document.getElementsByTagName("img")[0].src = "nouman.jpg"
+            document.getElementById("name").innerHTML = "Muhammad Nouman"
+            document.getElementsByTagName("p")[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel consequat mi. Cras condimentum, eros eu semper varius, mi felis tempor magna, vitae rutrum enim purus a odio. Curabitur nec tortor nec purus hendrerit scelerisque at at quam. Sed laculectus, gravida ac fringilla ac, ullamcorper a nulla.Sed a libero diam.Donec velit velit, lobortis et posuere sit amet, tincidunt ac lacus.Duis facilisis nulla non ante eleifend lobortis.Donec pulvinar elementum volutpat.Duis lacinia,nunc sit amet ultrices consequat, risus nisi laoreet ligula, ut eleifend diam justo a orci.Quisque scelerisque, erat sed aliquam malesuada, ligula arcu laoreet risus, eu dignissim arcu ligula non nibh.Vivamus ut est quis elit ornare ultricies nec at odio.Donec sodales ac ligula et cursus."
+        }
+
+        function furqan() {
+            document.getElementsByTagName("button")[3].style.backgroundColor = "black";
+            document.getElementsByTagName("button")[3].style.color = "white";
+            document.getElementsByTagName("button")[0].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[0].style.color = "black";
+            document.getElementsByTagName("button")[1].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[1].style.color = "black";
+            document.getElementsByTagName("button")[2].style.backgroundColor = "white";
+            document.getElementsByTagName("button")[2].style.color = "black";
+
+            document.getElementsByTagName("img")[0].src = "furqan.jpg"
+            document.getElementById("name").innerHTML = "Muhammad Furqan"
+            document.getElementsByTagName("p")[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel consequat mi. Cras condimentum, eros eu semper varius, mi felis tempor magna, vitae rutrum enim purus a odio. Curabitur nec tortor nec purus hendrerit scelerisque at at quam. Sed laculectus, gravida ac fringilla ac, ullamcorper a nulla.Sed a libero diam.Donec velit velit, lobortis et posuere sit amet, tincidunt ac lacus.Duis facilisis nulla non ante eleifend lobortis.Donec pulvinar elementum volutpat.Duis lacinia,nunc sit amet ultrices consequat, risus nisi laoreet ligula, ut eleifend diam justo a orci.Quisque scelerisque, erat sed aliquam malesuada, ligula arcu laoreet risus, eu dignissim arcu ligula non nibh.Vivamus ut est quis elit ornare ultricies nec at odio.Donec sodales ac ligula et cursus."
+        }
+    </script>
+</body>
+
+</html>
